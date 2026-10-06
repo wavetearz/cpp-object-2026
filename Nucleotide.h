@@ -6,6 +6,7 @@ public:
     short nucleotide;
     Nucleotide(short nucleotide);
     char nucleotideToCharacter();
+    static short characterToNucleotide(char character);
 };
 
 

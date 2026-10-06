@@ -8,7 +8,7 @@ class Sequence {
 public:
     std::vector<Nucleotide> strand;
     void printSequence();
-    void loadSequence(std::vector<Nucleotide> strand);
+    void loadSequence(char *path);
 };
 
 
