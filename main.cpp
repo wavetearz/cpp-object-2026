@@ -13,7 +13,8 @@ int main() {
     Sequence s;
 
     s.loadSequence("/Users/vjasieg/CLionProjects/cpp-object-2026/sequence.txt");
-    s.printSequence();
+    cout << s.getSequence() << endl;
+    cout << s.A << " " << s.C << " " << s.G << " " << s.T;
 
     return 0;
 }

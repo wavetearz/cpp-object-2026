@@ -1,4 +1,4 @@
-#include "Nucleotide.h"
+#include "../Nucleotide.h"
 
 Nucleotide::Nucleotide(short nucleotide) {
     this->nucleotide = nucleotide;
