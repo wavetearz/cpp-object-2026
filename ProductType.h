@@ -1,0 +1,9 @@
+#ifndef CPP_OBJECT_2026_PRODUCTTYPE_H
+#define CPP_OBJECT_2026_PRODUCTTYPE_H
+
+enum ProductType {
+    BOOK,
+    MAGAZINE
+};
+
+#endif //CPP_OBJECT_2026_PRODUCTTYPE_H

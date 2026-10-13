@@ -1,0 +1,10 @@
+#ifndef CPP_OBJECT_2026_WORKERTYPE_H
+#define CPP_OBJECT_2026_WORKERTYPE_H
+
+
+enum WorkerType {
+    JANITOR,
+    LIBRARIAN
+};
+
+#endif //CPP_OBJECT_2026_WORKERTYPE_H

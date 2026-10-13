@@ -7,9 +7,20 @@ include_directories(.)
 
 add_executable(cpp_object_2026
         main.cpp
-        Nucleotide.cpp
-        Nucleotide.h
-        Sequence.h
-        Sequence.cpp
-        Nucleotide.cpp
+        Library.cpp
+        Library.h
+        Worker.cpp
+        Worker.h
+        Librarian.cpp
+        Librarian.h
+        Janitor.cpp
+        Janitor.h
+        WorkerType.h
+        Product.cpp
+        Product.h
+        ProductType.h
+        Book.cpp
+        Book.h
+        Magazine.cpp
+        Magazine.h
 )

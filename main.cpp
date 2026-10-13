@@ -1,20 +1,30 @@
 #include <iostream>
-#include "Sequence.h"
-#include <vector>
+
+#include "Librarian.h"
+#include "Library.h"
+#include "Worker.h"
+#include "Janitor.h"
+#include "Book.h"
+#include "Magazine.h"
 
 using namespace std;
 
 int main() {
-    int arr[4] = {0, 1, 2, 3};
-    for (int i = 0; i < 4; i++) {
-        cout << arr[i] << endl;
-    }
+    Library l("Biblioteka Publiczna", "Szczecin");
+    Librarian worker1("Jan", "Kowalski", "janek@janek.pl", 30, 2, 15000);
+    Librarian worker2("Jan", "Kowalski", "janek@janek.pl", 50, 2, 15000);
+    Janitor worker3("Jan", "Kowalski", "janek@janek.pl", 20, 2, 15000);
+    l.addWorker(worker1);
+    l.addWorker(worker2);
+    l.addWorker(worker3);
 
-    Sequence s;
+    Book b("tytul", "opis", 30, "83745893479");
+    Magazine m("magazyn", "opis", 30, "22342342342");
+    l.addProduct(b);
+    l.addProduct(m);
 
-    s.loadSequence("/Users/vjasieg/CLionProjects/cpp-object-2026/sequence.txt");
-    cout << s.getSequence() << endl;
-    cout << s.A << " " << s.C << " " << s.G << " " << s.T;
+    l.deleteProduct(1);
+    l.deleteWorker(4354);
 
     return 0;
 }
